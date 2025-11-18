@@ -33,4 +33,22 @@ type IsAdmin = boolean;
 
 const isAdmin: IsAdmin = false;
 
-console.log(user1);
+// function
+
+type Add = (num1: number, num2: number) => number;
+
+interface IAdd {
+  (num1: number, num2: number): number;
+}
+
+const add: IAdd = (num1, num2) => num1 + num2;
+
+add(2, 5);
+
+type Friends = string[];
+
+interface IFreinds {
+  [index: number]: string;
+}
+
+const friends: IFreinds = ["A", "B", "C"];
